@@ -43,6 +43,7 @@ ERROR_CODES = {
 	"-1003": "JSON formatting error "
 }
 
+
 class P100():
 	def __init__ (self, ipAddress, email, password):
 		self.ipAddress = ipAddress
@@ -293,7 +294,7 @@ class P100():
 		data = json.loads(data)
 
 		if data["error_code"] != 0:
-			errorCode = ast.literal_eval(decryptedResponse)["error_code"]
+			errorCode = ast.literal_eval(data)["error_code"]
 			errorMessage = self.errorCodes[str(errorCode)]
 			raise Exception(f"Error Code: {errorCode}, {errorMessage}")
 		else:

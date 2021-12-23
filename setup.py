@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='PyP100',
-    version='0.0.13',
+    version='0.0.14',
     description='A module for controlling the TP-Link Tapo P100 Plugs, P105 Plugs and L1510 Bulbs.',
     long_description_content_type="text/markdown",
     long_description=README,
@@ -24,7 +24,7 @@ setup_args = dict(
 install_requires = [
     'pycryptodome==3.9.8',
     'pkcs7==0.1.2',
-    'requests==2.24.0',
+    'requests==2.26.0',
 ]
 
 if __name__ == '__main__':
