@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 dist/
 PyP100.egg-info/
+.idea/
+build/
